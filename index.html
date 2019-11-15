@@ -9,57 +9,54 @@ font-family: 'Roboto Mono', monospace; //shop
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stonks Simulator</title>
+    <title>Stonks Simulator &mdash; Home</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Staatliches&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/fav.ico" />
+    <script src="https://kit.fontawesome.com/9d8b0f55de.js" crossorigin="anonymous"></script>
     <script src="js/clickhandler.js"></script>
     <script src="js/main.js"></script>
   </head>
   <body>
-
     <header>
-      <div class="head">
-        <h1 class="head__title">Stonks Simulator</h1>
-      </div>
+      <h1 class="header">Stonks Simulator</h1>
+      <h2 class="header--small">by drazero</h2>
     </header>
 
-    <div class="content">
-      <main class="main">
-        <div class="top">
+    <main>
+      <div class="klik-container">
+        <div class="knop">
           <div class="treat-wrapper">
-            <button class="treat-button" onClick="onClick()">CLICK HERE FOR STONKS!</button>
+            <button onClick="onClick()"class="treat-button">CLICK HERE FOR STONKS!</button>
           </div>
         </div>
-          <aside class="secondary">
-            <div class="test">
-              <p style="color:#fff;font-size:2em;">Clicks: <a id="clicks">0</a></p>
-            </div>
-          </aside>
-          <article class="article">test
 
-          </article>
-        </main>
+        <p style="color:#fff;font-size:2em;">Clicks: <a id="js--clicks">0</a></p>
+      </div>
 
-        <aside class="primary">
-          <div class="primary__item1">
-            <p></p>
-          </div>
-          <div class="primary__item2">
-            <p>test</p>
-          </div>
-        </aside>
-
-
-        <div id="bg">
-          <img src="img/bg.jpg" alt="">
+      <div class="unlockable">
+        <div class="item item1" id="test">
+          <h3>Item 1</h3>
+          <p>test</p>
         </div>
-
-      </main>
-    </div>
+        <div class="item item2" id="test">
+          <h3>Item 1</h3>
+          <p>test</p>
+        </div>
+        <div class="item item3" id="test">
+          <h3>Item 1</h3>
+          <p>test</p>
+        </div>
+        <div class="item item4" id="test">
+          <h3>Item 1</h3>
+          <p>test</p>
+        </div>
+      </div>
+    </main>
 
     <footer>
-      <p>2019 &copy; Stonks Simulator &mdash; by <a href="https://github.com/draZer0">drazero</a></p>
 
     </footer>
+
   </body>
 </html>

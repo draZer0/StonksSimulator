@@ -1,9 +1,17 @@
 let clicks = 0;
-var audio = new Audio('js/audio/coin.mp3');
-
 
 onClick = () => {
     clicks += 1;
-    audio.play();
-    document.getElementById("clicks").innerHTML = clicks;
-};
+    document.getElementById("js--clicks").innerHTML = clicks;
+
+    if (clicks > 3) {
+      console.log("test");
+      document.getElementById("test").style.display = "block";
+    } else if (clicks < 3) {
+      console.log("nee");
+    } else {
+
+    }
+
+
+}

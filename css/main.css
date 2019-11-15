@@ -1,69 +1,62 @@
-html, body {
-  padding: 0;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
-  overflow: hidden;
-  font-family: "Roboto", sans-serif;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-* {
-  box-sizing: border-box;
-  position: relative;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
 body {
-  background: #14192D;
+  line-height: 1;
 }
 
-.content {
-  display: flex;
-  justify-content: space-between;
-  height: 75vh;
-  max-width: 1500px;
-  margin: auto;
+ol, ul {
+  list-style: none;
 }
 
-.main {
-  flex: 0 0 70.5%;
-  display: flex;
-  flex-wrap: wrap;
+blockquote, q {
+  quotes: none;
 }
 
-.top {
-  flex: 0 0 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  align-items: center;
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
 }
 
-.secondary {
-  background-color: pink;
-  flex: 0 0 25%;
-  order: 1;
-}
-
-.article {
-  background-color: blue;
-  flex: 1;
-  order: 2;
-}
-
-.primary {
-  flex: 0 0 27%;
-  background-color: yellow;
-}
-
-.head__title {
-  color: #fff;
-  font-size: 2em;
-  text-align: center;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .treat-button {
   font-family: "Staatliches", cursive;
   font-size: 4vmin;
   appearance: none;
-  background: linear-gradient(to bottom, #1aff8c, #00b359);
+  background: linear-gradient(to bottom, #ff981a, #ffd600);
   border: none;
   color: #FFF;
   border-radius: 2em;
@@ -124,41 +117,70 @@ body {
   }
 }
 
-#bg {
-  z-index: -1;
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background-color: #000;
-}
-
-#bg img {
-  position: absolute;
-  opacity: 0.12;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-}
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+html, body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #00456f;
+}
+
+header {
+  font-family: "Staatliches", cursive;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  padding: 40px;
+  background: #008ee4;
+  background: linear-gradient(180deg, #008ee4 0%, rgba(255, 255, 255, 0) 100%);
+}
+header .header {
+  font-size: 3.5em;
+}
+header .header--small {
+  font-size: 1.2em;
+}
+
+.knop {
+  margin-top: 80px;
   text-align: center;
 }
-footer a {
-  text-decoration: none;
-  font-weight: bold;
+
+.unlockable {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.unlockable .item {
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
+}
+.unlockable .item h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.item1 {
+  display: block;
+}
+
+.item2 {
+  display: block;
+}
+
+.item3 {
+  display: block;
+}
+
+.item4 {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
